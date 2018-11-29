@@ -1,0 +1,46 @@
+#in terminal:
+
+sudo apt-get update
+sudo apt-get -y upgrade
+
+###DO NOT UPGRADE TO 18 UBUNTU if you are using 16
+
+python3 -V
+
+#should be
+#Python 3.5.2
+
+sudo apt-get install -y python3-pip
+
+sudo apt-get install -y python3-venv
+
+#create folder for project
+
+mkdir environments
+cd environments
+
+# create env 
+
+pyvenv my_env
+
+# activate enviroment
+
+source my_env/bin/activate
+
+#install all libs for current project
+
+pip install keras
+pip install jupyterlab
+pip install matplotlib
+pip install tensorflow
+
+#link https://machinelearningmastery.com/handwritten-digit-recognition-using-convolutional-neural-networks-python-keras/
+
+
+#start jupyter 
+
+jupyter lab
+
+# choose ML_start.ipynb
+
+#execute all commands
